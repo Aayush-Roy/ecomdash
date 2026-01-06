@@ -13,6 +13,7 @@ const Categories = () => {
   const [showEditModal, setShowEditModal] = useState(false)
   const [categoryToDelete, setCategoryToDelete] = useState(null)
   const [editingCategory, setEditingCategory] = useState(null)
+  
   const [newCategory, setNewCategory] = useState({
     name: '',
     description: '',
@@ -24,6 +25,7 @@ const Categories = () => {
 
   useEffect(() => {
     fetchCategories()
+
   }, [])
 
   const fetchCategories = async () => {
@@ -37,6 +39,8 @@ const Categories = () => {
       setLoading(false)
     }
   }
+
+ 
 
   const handleCreateCategory = async (e) => {
     e.preventDefault()
