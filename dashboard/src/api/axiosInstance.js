@@ -1,8 +1,8 @@
 // src/api/axiosInstance.js
 import axios from 'axios'
-
+// https://ecommerce-api-tn5a.onrender.com
 const axiosInstance = axios.create({
-  baseURL: 'https://ecommerce-api-tn5a.onrender.com',
+  baseURL: 'http://localhost:8000',
   timeout: 10000,
 })
 
